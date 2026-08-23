@@ -165,7 +165,7 @@ namespace Twitch.Extensions.Base.Services
 				if (response.IsSuccessStatusCode)
 				{
 					List<ChannelConfigurationModel> results = new List<ChannelConfigurationModel>();
-					JObject jobj = await response.ProcessJObjectResponse();
+					JObject jobj = await response.ProcessJObjectResponseAsync();
 					if (jobj != null)
 					{
 						foreach (var kvp in jobj)
@@ -205,7 +205,7 @@ namespace Twitch.Extensions.Base.Services
 				HttpResponseMessage response = await client.GetAsync($"https://api.twitch.tv/extensions/{clientID}/configurations/segments/global");
 				if (response.IsSuccessStatusCode)
 				{
-					JObject jobj = await response.ProcessJObjectResponse();
+					JObject jobj = await response.ProcessJObjectResponseAsync();
 					if (jobj != null && jobj.Count > 0)
 					{
 						ConfigurationResultModel result = jobj.Values().First().ToObject<ConfigurationResultModel>();

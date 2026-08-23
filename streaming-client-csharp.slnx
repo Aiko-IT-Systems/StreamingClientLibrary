@@ -1,0 +1,16 @@
+<Solution>
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Folder Name="/Solution Items/">
+    <File Path=".travis.yml" />
+    <File Path="LICENSE.txt" />
+    <File Path="README.md" />
+  </Folder>
+  <Folder Name="/Twitch/">
+    <Project Path="Twitch/Twitch.Base/Twitch.Base.csproj" />
+    <Project Path="Twitch/Twitch.Extensions.Base/Twitch.Extensions.Base.csproj" />
+  </Folder>
+  <Project Path="StreamingClient.Base/StreamingClient.Base.csproj" />
+</Solution>

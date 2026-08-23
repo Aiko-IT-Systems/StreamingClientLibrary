@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net9.0</TargetFramework>
+    <TargetFramework>net10.0</TargetFramework>
     <AssemblyName>Twitch.Base</AssemblyName>
     <RootNamespace>Twitch.Base</RootNamespace>
     <Copyright>Copyright © Matthew Olivo (SaviorXTanren) 2017-2022</Copyright>
@@ -22,7 +22,7 @@ For more information, please see our project site: https://github.com/SaviorXTan
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>obj\Debug\netstandard2.0\Twitch.Base.xml</DocumentationFile>
+    <DocumentationFile>obj\Debug\net10.0\Twitch.Base.xml</DocumentationFile>
     <NoWarn>1701;1702;IDE0073</NoWarn>
   </PropertyGroup>
 
