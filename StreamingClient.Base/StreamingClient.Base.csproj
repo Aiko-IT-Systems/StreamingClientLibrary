@@ -11,28 +11,33 @@
     <Version>1.0.0.11</Version>
     <Description>A library used for multiple streaming libraries to share common code logic.
 
-For more information, please see our project site: https://github.com/SaviorXTanren/StreamingClientLibrary</Description>
+      For more information, please see our project site:
+      https://github.com/SaviorXTanren/StreamingClientLibrary</Description>
     <PackageTags>Streaming Bot Chat Library</PackageTags>
     <PackageId>StreamingClientLibrary.Base</PackageId>
     <Product>Streaming Client Library</Product>
-    <PackageReleaseNotes>Adding override to logger for whether to always log full stack traces when logging an exception</PackageReleaseNotes>
+    <PackageReleaseNotes>Adding override to logger for whether to always log full stack traces when
+      logging an exception</PackageReleaseNotes>
     <AssemblyVersion>1.0.0.11</AssemblyVersion>
     <FileVersion>1.0.0.11</FileVersion>
     <RepositoryUrl>https://github.com/SaviorXTanren/StreamingClientLibrary</RepositoryUrl>
     <PackageProjectUrl>https://github.com/SaviorXTanren/StreamingClientLibrary</PackageProjectUrl>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NuGetAuditSuppress>true</NuGetAuditSuppress>
+    <NuGetAudit>false</NuGetAudit>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DocumentationFile>StreamingClient.Base.xml</DocumentationFile>
-    <NoWarn>1701;1702;IDE0073</NoWarn>
+    <NoWarn>1701;1702;NU1701;NU5104;CS2019;NU1605;IDE0073</NoWarn>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <DocumentationFile>S:\Code\mixer-client-csharp\StreamingClient.Base\StreamingClient.Base.xml</DocumentationFile>
-    <NoWarn>1701;1702;IDE0073</NoWarn>
+    <NoWarn>1701;1702;NU1701;NU5104;CS2019;NU1605;IDE0073</NoWarn>
   </PropertyGroup>
+
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
